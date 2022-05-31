@@ -1,9 +1,11 @@
 package com.maktab74.hw6;
 
+import com.maktab74.hw6.util.InvalidIndexException;
+
 import java.util.Scanner;
 
 public class Hw6Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidIndexException {
         while (true) {
             showMenu();
             int choice = getChoice("Please select: ", 3);
@@ -12,7 +14,7 @@ public class Hw6Application {
                     Part1.execute();
                     break;
                 case 2:
-                    //Part2.execute();
+                    Part2.execute();
                     break;
                 case 3:
                     return;
